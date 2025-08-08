@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tetrix Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <canvas id="game" width="200" height="400"></canvas>
+
+    <div class="info">
+      <h2>Next Piece</h2>
+      <canvas id="next" width="80" height="80"></canvas>
+
+      <div class="scoreboard">
+        <div>Score: <span id="score">0</span></div>
+        <div>Lines: <span id="lines">0</span></div>
+        <div>Level: <span id="level">1</span></div>
+      </div>
+
+      <div class="controls">
+        <h3>Controls</h3>
+        <ul>
+          <li>←: Move Left</li>
+          <li>→: Move Right</li>
+          <li>↓: Soft Drop</li>
+          <li>↑: Rotate</li>
+          <li>Space: Hard Drop</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
